@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*版心*/
+.container {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+/*整个轮播模块样式*/
+.banner {
+  width: 790px;
+  height: 340px;
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*左右按钮*/
+.banner .btn {
+  width: 30px;
+  height: 60px;
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  top:50%;
+  margin-top: -30px;
+  cursor: pointer;
+  text-align: center;
+  font:20px/60px '宋体';
+  color:#fff;
+
+}
+/*右侧按钮*/
+.banner .rightBtn {
+  right: 0;
+}
+
+.banner .btn:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+/*一组小点按钮*/
+.banner ul{
+  position: absolute;
+  bottom: 20px;
+  width: 114px;
+  left:50%;
+  margin-left: -57px;
+}
+.banner ul li {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  float: left;
+}
+.banner ul li+li {
+  margin-left:5px;
+}
+.banner ul li.active {
+  background-color: red;
+}
+
+/*内容项*/
+.banner .content .item {
+  position: absolute;
+  left: -790px;
+}
+
+.banner .content .first {
+  left: 0;
+}
